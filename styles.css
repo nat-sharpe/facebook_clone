@@ -12,158 +12,541 @@ h4 {
     padding: 0;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    background: lightslategray;
+@media (max-width: 768px){
+    .main {
+        display: flex;
+        flex-direction: column;
+        background: lightslategray;
+    }
+
+    .top_bar {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        background: darkblue;
+    }
+
+    .navbar {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+    }
+
+    .nav_link {
+        background: darkblue;
+        width: 2em;
+        height: 3em;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_icon {
+        width: 2em;
+        height: 2em;
+    }
+
+    .big_menu {
+        display: none;
+        color: white
+    }
+
+    .update_status {
+        background: white;
+        margin-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .status_input {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center
+    }
+
+    .profile_pic {
+        width: 5em;
+        height: 5em;
+    }
+
+    .input-bar {
+        flex: 1;
+    }
+
+    .other_input {
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .btn {
+        margin: 5px;
+    }
+
+    .stories {
+        background: white;
+        margin-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stories_head {
+        display: flex;
+        flex-direction: row; 
+    }
+
+    .spacer {
+        width: 2em;
+        flex-grow: 1
+    }
+
+    .stories_bottom {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .stories_people {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stories_name {
+        margin: 0;
+        text-align: left;
+    }
+
+    .post {
+        background: white;
+        margin-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .post_head {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    .post_head_name {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .post_pic {
+        display: flex;
+        justify-content: center;
+    }
+
+    .post_pic_image {
+        max-width: 32em;
+        max-height: 38em;
+    }
+
+    .post_text {
+        text-align: left;
+    }
+
+    .reactions {
+        display: flex;
+        align-items: center;
+    }
+
+    .reactions_pic {
+        width: 2em;
+        height: 2em;
+    }
+
+    .you_react {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .you_react_buttons {
+        display: flex;
+        align-items: center;
+    }
 }
 
-.navbar {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    flex-direction: row;
+@media (min-width: 768px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+        background: lightslategray;
+    }
+    
+    .top_bar {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        background: darkblue;
+    }
+    
+    .big_menu {
+        color: white;
+        DISPLAY: none;
+
+    }
+
+    .column_1 {
+        display; flex;
+        flex-basis: 20em;
+    }
+    .navbar {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+    }
+
+    .nav_link {
+        background: darkblue;
+        width: 2em;
+        height: 3em;
+        flex-grow: 1;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 3em;
+    }
+
+    .nav_icon {
+        width: 2em;
+        height: 2em;
+    }
+
+    .nav_menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .update_status {
+        background: white;
+        margin-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .status_input {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center
+    }
+
+    .profile_pic {
+        width: 5em;
+        height: 5em;
+    }
+
+    .input-bar {
+        flex: 1;
+    }
+
+    .other_input {
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .btn {
+        margin: 5px;
+    }
+
+    .stories {
+        background: white;
+        margin-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stories_head {
+        display: flex;
+        flex-direction: row; 
+    }
+
+    .spacer {
+        width: 2em;
+        flex-grow: 1
+    }
+
+    .stories_bottom {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .stories_people {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stories_name {
+        margin: 0;
+        text-align: left;
+    }
+
+    .post {
+        background: white;
+        margin-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .post_head {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    .post_head_name {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .post_pic {
+        display: flex;
+        justify-content: center;
+    }
+
+    .post_pic_image {
+        max-width: 32em;
+        max-height: 38em;
+    }
+
+    .post_text {
+        text-align: left;
+    }
+
+    .reactions {
+        display: flex;
+        align-items: center;
+    }
+
+    .reactions_pic {
+        width: 2em;
+        height: 2em;
+    }
+
+    .you_react {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .you_react_buttons {
+        display: flex;
+        align-items: center;
+    }
 }
 
-.nav_link {
-    background: lightskyblue;
-    width: 2em;
-    height: 3em;
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (min-width: 1200px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+        background: lightslategray;
+    }
+
+    .top_bar {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        background: darkblue;
+    }
+
+    .big_menu {
+        color: white;
+        display: block;
+    }
+
+    .column_1 {
+        display; flex;
+        flex-basis: 20em;
+    }
+    .navbar {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+    }
+
+    .nav_link {
+        background: darkblue;
+        width: 2em;
+        height: 3em;
+        flex-grow: 1;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 20em;
+    }
+
+    .nav_icon {
+        width: 2em;
+        height: 2em;
+    }
+
+    .nav_menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .update_status {
+        background: white;
+        margin-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .status_input {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center
+    }
+
+    .profile_pic {
+        width: 5em;
+        height: 5em;
+    }
+
+    .input-bar {
+        flex: 1;
+    }
+
+    .other_input {
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .btn {
+        margin: 5px;
+    }
+
+    .stories {
+        background: white;
+        margin-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stories_head {
+        display: flex;
+        flex-direction: row; 
+    }
+
+    .spacer {
+        width: 2em;
+        flex-grow: 1
+    }
+
+    .stories_bottom {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .stories_people {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stories_name {
+        margin: 0;
+        text-align: left;
+    }
+
+    .post {
+        background: white;
+        margin-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .post_head {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    .post_head_name {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .post_pic {
+        display: flex;
+        justify-content: center;
+    }
+
+    .post_pic_image {
+        max-width: 32em;
+        max-height: 38em;
+    }
+
+    .post_text {
+        text-align: left;
+    }
+
+    .reactions {
+        display: flex;
+        align-items: center;
+    }
+
+    .reactions_pic {
+        width: 2em;
+        height: 2em;
+    }
+
+    .you_react {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .you_react_buttons {
+        display: flex;
+        align-items: center;
+    }
+
 }
 
-.nav_icon {
-    width: 2em;
-    height: 2em;
-}
-
-.update_status {
-    background: white;
-    margin-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    display: flex;
-    flex-direction: column
-}
-
-.status_input {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center
-}
-
-.profile_pic {
-    width: 5em;
-    height: 5em;
-}
-
-.input-bar {
-    flex: 1;
-}
-
-.other_input {
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.btn {
-    margin: 5px;
-}
-
-.stories {
-    background: white;
-    margin-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    display: flex;
-    flex-direction: column;
-}
-
-.stories_head {
-    display: flex;
-    flex-direction: row; 
-}
-
-.spacer {
-    width: 2em;
-    flex-grow: 1
-}
-
-.stories_bottom {
-    display: flex;
-    flex-direction: row;
-}
-
-.stories_people {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.stories_name {
-    margin: 0;
-    text-align: left;
-}
-
-.post {
-    background: white;
-    margin-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    display: flex;
-    flex-direction: column;
-}
-
-.post_head {
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-}
-
-.post_head_name {
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start;
-}
-
-.post_pic {
-    display: flex;
-    justify-content: center;
-}
-
-.post_pic_image {
-    max-width: 32em;
-    max-height: 38em;
-}
-
-.post_text {
-    text-align: left;
-}
-
-.reactions {
-    display: flex;
-    align-items: center;
-}
-
-.reactions_pic {
-    width: 2em;
-    height: 2em;
-}
-
-.you_react {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.you_react_buttons {
-    display: flex;
-    align-items: center;
-}

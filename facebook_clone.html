@@ -5,128 +5,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Facebook</title>
 </head>
 <body>
-    <div class="main">
-        <ul class="navbar">
-            <li class="nav_link">
-                <img src="newsfeed.png" class="nav_icon">
-            </li>
-            <li class="nav_link">
-                <img src="newsfeed.png" class="nav_icon">
-            </li>
-            <li class="nav_link">
-                <img src="newsfeed.png" class="nav_icon">            
-            </li>
-            <li class="nav_link">
-                <img src="newsfeed.png" class="nav_icon">            
-            </li>
-            <li class="nav_link">
-                <img src="newsfeed.png" class="nav_icon">            
-            </li>
-            <li class="nav_link">
-                <img src="newsfeed.png" class="nav_icon">            
-            </li>
-        </ul>
-        <div class="update_status">
-            <div class="status_input">
-                <img src="icon.png" class="profile_pic">
-                <input type="text" class="input-bar">
+    <ul class="top_bar">
+        <li class="status_input">
+            <img src="logo.png" class="profile_pic">
+            <input type="text" class="input-bar">
+        </li>
+        <li class="spacer"></li>
+        <!-- <li class="nav_link">
+            <img src="hamburger.png" class="top_icon">            
+        </li> -->
+    </ul>
+    <div class="main"> 
+        <div class="column_1">
+            <ul class="navbar">
+                <li class="nav_link">
+                    <div class="nav_menu">
+                        <img src="newsfeed2.png" class="nav_icon"> 
+                        <h4 class="big_menu">Newsfeed</h4>
+                    </div> 
+                </li>
+                <li class="nav_link">
+                    <div class="nav_menu">
+                        <img src="friends.png" class="nav_icon"> 
+                        <h4 class="big_menu">Friends</h4>
+                    </div> 
+                </li>
+                <li class="nav_link">
+                    <div class="nav_menu">
+                        <img src="messenger.png" class="nav_icon"> 
+                        <h4 class="big_menu">Messenger</h4>
+                    </div>           
+                </li>
+                <li class="nav_link">
+                    <div class="nav_menu">
+                        <img src="notifications.png" class="nav_icon"> 
+                        <h4 class="big_menu">Notifications</h4>
+                    </div>       
+                </li>
+                <li class="nav_link">
+                    <div class="nav_menu">
+                        <img src="hamburger.png" class="nav_icon"> 
+                        <h4 class="big_menu">More</h4>
+                    </div>         
+                </li>
+            </ul>
+        </div>
+        <div class="column_2">
+            <div class="update_status">
+                <div class="status_input">
+                    <img src="profile_pic.png" class="profile_pic">
+                    <input type="text" class="input-bar">
+                </div>
+                <div class="other_input">
+                    <img src="buttons.png" class="btn">
+                </div>
             </div>
-            <div class="other_input">
-                <button class="btn">Click Me</button>
-                <button class="btn">Click Me</button>
-                <button class="btn">Click Me</button>
-                <button class="btn">Click Me</button>
+            <div class="post">
+                <div class="post_head">
+                    <img src="friend_pic.png" class="profile_pic">
+                    <div "post_head_name">
+                        <h4 class="stories_name">Mark Johnson</h4>
+                        <p class="stories_name">11 hrs</p>
+                    </div>
+                    <div class="spacer"></div>
+                    <h4 class="dots">...</h4>
+                </div>
+                <div class="post_text">
+                    <p>
+                        Hwaet we gardena in gardagum theodcyninga thrym gefrunon. Hutha athelingas ellen fremedon. Oft Scyld Scafing sceathena threatum, monegum meagthum, meodsetla oftea.
+                    </p>
+                </div>
+                <div class="post_pic">
+                    <img src="post2.jpg" class="post_pic_image">
+                </div>
+                <div class="reactions">
+                    <div class="spacer"></div>
+                    <h4>1 Comment</h4>
+                </div>
+                <hr>
+                <div class="you_react">
+                    <div class="you_react_buttons">
+                        <img src="like.png" class="reactions_pic">
+                        <h4>Like</h4>
+                    </div>
+                    <div class="you_react_buttons">
+                        <img src="comment.png" class="reactions_pic">
+                        <h4>Comment</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post_head">
+                    <img src="friend_pic.png" class="profile_pic">
+                    <div "post_head_name">
+                        <h4 class="stories_name">Mark Johnson</h4>
+                        <p class="stories_name">23 hrs</p>
+                    </div>
+                    <div class="spacer"></div>
+                    <h4 class="dots">...</h4>
+                </div>
+                <div class="post_text">
+                    <p>
+                        Hwaet we gardena in gardagum theodcyninga thrym gefrunon. Hutha athelingas ellen fremedon. Oft Scyld Scafing sceathena threatum, monegum meagthum, meodsetla oftea.
+                    </p>
+                </div>
+                <div class="post_pic">
+                    <img src="post2.jpg" class="post_pic_image">
+                </div>
+                <div class="reactions">
+                    <div class="spacer"></div>
+                    <h4>3 Comments</h4>
+                </div>
+                <hr>
+                <div class="you_react">
+                    <div class="you_react_buttons">
+                        <img src="like.png" class="reactions_pic">
+                        <h4>Like</h4>
+                    </div>
+                    <div class="you_react_buttons">
+                        <img src="comment.png" class="reactions_pic">
+                        <h4>Comment</h4>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="stories">
-            <div class="stories_head">
-                <h4>Stories</h4>
-                <div class="spacer"></div>
-                <h4 class="dots">...</h4>
-            </div>
-            <div class="stories_bottom">
-                <div class="stories_people">
-                    <img src="icon.png" class="profile_pic">
-                    <p class="stories_name">Add</p>
+        <div class="column_3">    
+            <div class="stories">
+                <div class="stories_head">
+                    <h4>Stories</h4>
+                    <div class="spacer"></div>
+                    <h4 class="dots">...</h4>
                 </div>
-                <div class="stories_people">
-                    <img src="icon.png" class="profile_pic">
-                    <p class="stories_name">Dennis</p>
-                </div>
-            </div>
-        </div>
-        <div class="post">
-            <div class="post_head">
-                <img src="icon.png" class="profile_pic">
-                <div "post_head_name">
-                    <h4 class="stories_name">Dennis Narlock</h4>
-                    <p class="stories_name">11 hrs</p>
-                </div>
-                <div class="spacer"></div>
-                <h4 class="dots">...</h4>
-            </div>
-            <div class="post_text">
-                <p>
-                    Hwaet we gardena in gardagum theodcyninga thrym gefrunon. Hutha athelingas ellen fremedon. Oft Scyld Scafing sceathena threatum, monegum meagthum, meodsetla oftea.
-                </p>
-            </div>
-            <div class="post_pic">
-                <img src="icon.png" class="post_pic_image">
-            </div>
-            <div class="reactions">
-                <img src="icon.png" class="reactions_pic">
-                <img src="icon.png" class="reactions_pic">
-                <div class="spacer"></div>
-                <h4>1 Comment</h4>
-            </div>
-            <hr>
-            <div class="you_react">
-                <div class="you_react_buttons">
-                    <img src="icon.png" class="reactions_pic">
-                    <h4>Like</h4>
-                </div>
-                <div class="you_react_buttons">
-                    <img src="icon.png" class="reactions_pic">
-                    <h4>Comment</h4>
+                <div class="stories_bottom">
+                    <div class="stories_people">
+                        <img src="story_pic1.png" class="profile_pic">
+                        <p class="stories_name">Add</p>
+                    </div>
+                    <div class="stories_people">
+                        <img src="story_pic2.png" class="profile_pic">
+                        <p class="stories_name">Dennis</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="post">
-            <div class="post_head">
-                <img src="icon.png" class="profile_pic">
-                <div "post_head_name">
-                    <h4 class="stories_name">Dennis Narlock</h4>
-                    <p class="stories_name">11 hrs</p>
+            <div class="post">
+                <div class="post_head">
+                    <div "post_head_name">
+                        <h4 class="stories_name">Sponsored</h4>
+                    </div>
+                    <div class="spacer"></div>
+                    <h4 class="dots">Create Ad</h4>
                 </div>
-                <div class="spacer"></div>
-                <h4 class="dots">...</h4>
-            </div>
-            <div class="post_text">
-                <p>
-                    Hwaet we gardena in gardagum theodcyninga thrym gefrunon. Hutha athelingas ellen fremedon. Oft Scyld Scafing sceathena threatum, monegum meagthum, meodsetla oftea.
-                </p>
-            </div>
-            <div class="post_pic">
-                <img src="icon.png" class="post_pic_image">
-            </div>
-            <div class="reactions">
-                <img src="icon.png" class="reactions_pic">
-                <img src="icon.png" class="reactions_pic">
-                <div class="spacer"></div>
-                <h4>1 Comment</h4>
-            </div>
-            <hr>
-            <div class="you_react">
-                <div class="you_react_buttons">
-                    <img src="icon.png" class="reactions_pic">
-                    <h4>Like</h4>
+                <div class="post_pic">
+                    <img src="ad1.png" class="post_pic_image">
                 </div>
-                <div class="you_react_buttons">
-                    <img src="icon.png" class="reactions_pic">
-                    <h4>Comment</h4>
+                <div class="post_text">
+                    <h4>The Most Amazing Thing!</h4>
+                    <p>
+                        Buy this thing. This thing will make you happy. It is better than all other things put together. Give me your money now, fool!
+                    </p>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post_head">
+                    <div "post_head_name">
+                        <h4 class="stories_name">Sponsored</h4>
+                    </div>
+                    <div class="spacer"></div>
+                    <h4 class="dots">Create Ad</h4>
+                </div>
+                    <div class="post_pic">
+                    <img src="ad2.jpg" class="post_pic_image">
+                </div>
+                <div class="post_text">
+                    <h4>An Even Better Thing!</h4>
+                    <p>
+                        Buy this thing. This thing will make you happy. It is better than all other things put together. Give me your money now, fool!
+                    </p>
                 </div>
             </div>
         </div>
